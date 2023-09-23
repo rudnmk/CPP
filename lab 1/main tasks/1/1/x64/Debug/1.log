@@ -1,0 +1,4 @@
+﻿  1.cpp
+D:\CPP\lab 1\main tasks\1\1\1.cpp(10,15): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+D:\CPP\lab 1\main tasks\1\1\1.cpp(11,5): warning C4858: Отбрасывание возвращаемого значения: The 'remove' and 'remove_if' algorithms return the iterator past the last element that should be kept. You need to call container.erase(result, container.end()) afterwards. In C++20, 'std::erase' and 'std::erase_if' are simpler replacements for these two steps..
+  1.vcxproj -> D:\CPP\lab 1\main tasks\1\x64\Debug\1.exe

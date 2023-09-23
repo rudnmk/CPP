@@ -1,0 +1,5 @@
+﻿  2.cpp
+D:\CPP\lab 1\main tasks\2\2\2.cpp(18,15): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+D:\CPP\lab 1\main tasks\2\2\2.cpp(19,21): warning C4244: инициализация: преобразование "float" в "size_t", возможна потеря данных
+D:\CPP\lab 1\main tasks\2\2\2.cpp(15,15): warning C4101: number: неиспользованная локальная переменная
+  2.vcxproj -> D:\CPP\lab 1\main tasks\2\x64\Debug\2.exe
