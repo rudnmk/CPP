@@ -1,0 +1,4 @@
+﻿  task.cpp
+C:\Users\mk170\CPP\lab 2\task\task\task.cpp(37,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mk170\CPP\lab 2\task\task\task.cpp(34,7): warning C4101: num: неиспользованная локальная переменная
+  task.vcxproj -> C:\Users\mk170\CPP\lab 2\task\x64\Debug\task.exe
