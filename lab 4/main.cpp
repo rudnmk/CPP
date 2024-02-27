@@ -2,7 +2,7 @@
 #include "dispenserType.h"
  
 int getChoice(); //это тот же showSelection, только с получением ответа пользователя
-void sellProduct(cashRegister count, dispenserType sweetsType);
+void sellProduct(cashRegister& count, dispenserType& sweetsType);
  
 int main()
 {   
@@ -30,8 +30,8 @@ int main()
             default:
                 std::cout<<"There's nothing under this number."<<std::endl;
                 break;
-        choice = getChoice();
         }
+        choice = getChoice();
     }
     
     
@@ -51,7 +51,7 @@ int getChoice() {
     return choice;
 }
  
-void sellProduct(cashRegister count, dispenserType sweetsType) {
+void sellProduct(cashRegister& count, dispenserType& sweetsType) {
     if (sweetsType.getNoOfItems() > 0) {
         int deposit;
         int deposit2;
@@ -70,9 +70,11 @@ void sellProduct(cashRegister count, dispenserType sweetsType) {
         }
         count.acceptAmount(sweetsType.getCost());
         std::cout<<"There you go! Have a nice day!"<<std::endl;
+        sweetsType.makeSale();
         if (deposit > sweetsType.getCost()) {
             std::cout<<"Here's your change: "<<(deposit - sweetsType.getCost())<<std::endl;
             }
+        
         
     }
     else {
