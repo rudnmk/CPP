@@ -5,6 +5,7 @@ Circle::Circle() {}
 
 Circle::Circle(float r) {
     SetRadius(r);
+    Circle::CalculateArea();
     Shape::SetName("Круг.");
 }
 

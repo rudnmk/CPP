@@ -1,10 +1,19 @@
 #include "TriangularPyramid.h"
 
 
-TriangularPyramid::TriangularPyramid(float a, float h, float p_h) {
-    Triangle::SetBase(a);
-    Triangle::SetHeight(h);
+TriangularPyramid::TriangularPyramid(Triangle& triangle, float p_h) {
+    triangle_base = triangle.GetBase();
+    triangle_height = triangle.GetHeight();
     height = p_h;
+    TriangularPyramid::CalculateVolume();
+    Shape::SetName("Треугольная пирамида");
+}
+
+TriangularPyramid::TriangularPyramid(float a, float h, float p_h) {
+    triangle_base = a;
+    triangle_height = h;
+    height = p_h;
+    TriangularPyramid::CalculateVolume();
     Shape::SetName("Треугольная пирамида");
 }
 
@@ -16,11 +25,12 @@ void TriangularPyramid::CalculateVolume() {
 }
 
 void TriangularPyramid::Scale(float scaleFactor) {
-    float b = Triangle::GetBase();
-    float h = Triangle::GetHeight();
-    Triangle::SetBase(b * scaleFactor);
-    Triangle::SetHeight(h * scaleFactor);
+    triangle_base = triangle_base * scaleFactor;
+    triangle_height = triangle_height * scaleFactor;
     height = height * scaleFactor;
+    Triangle::SetBase(triangle_base);
+    Triangle::SetHeight(triangle_height);
+    Triangle::CalculateArea();
     TriangularPyramid::CalculateVolume();
 }
 

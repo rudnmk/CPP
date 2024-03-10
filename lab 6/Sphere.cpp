@@ -3,6 +3,7 @@
 
 Sphere::Sphere(float r) {
     radius = r;
+    Sphere::CalculateVolume();
     Shape::SetName("Сфера.");
 }
 

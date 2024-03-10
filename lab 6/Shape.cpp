@@ -1,5 +1,5 @@
 #include "Shape.h"
-
+setlocale(LC_ALL, "RUS");
 
 std::string Shape::GetName() {
     return name;

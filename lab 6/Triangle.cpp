@@ -1,11 +1,12 @@
 #include "Triangle.h"
 
 
-Triangle::Triangle(){}
+Triangle::Triangle() {}
 
 Triangle::Triangle(float a, float h) {
     SetBase(a);
     SetHeight(h);
+    Triangle::CalculateArea();
     Shape::SetName("Треугольник.");
 }
 

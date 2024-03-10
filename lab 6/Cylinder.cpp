@@ -1,9 +1,17 @@
 #include "Cylinder.h"
 
 
-Cylinder::Cylinder(float r, float h) {
-    SetRadius(r);
+Cylinder::Cylinder(Circle& circle, float h) {
+    circle_radius = circle.GetRadius();
     height = h;
+    Cylinder::CalculateVolume();
+    Shape::SetName("Цилиндр.");
+}
+
+Cylinder::Cylinder(float r, float h) {
+    circle_radius = r;
+    height = h;
+    Cylinder::CalculateVolume();
     Shape::SetName("Цилиндр.");
 }
 
@@ -15,9 +23,10 @@ void Cylinder::CalculateVolume() {
 }
 
 void Cylinder::Scale(float scaleFactor) {
-    float r = Circle::GetRadius();
-    Circle::SetRadius(r * scaleFactor);
+    circle_radius = circle_radius * scaleFactor;
     height = height * scaleFactor;
+    Circle::SetRadius(circle_radius);
+    Circle::CalculateArea();
     Cylinder::CalculateVolume();
 }
 

@@ -12,5 +12,4 @@ public:
     bool operator> (const Shape3D&) const;
     bool operator< (const Shape3D&) const;
     bool operator== (const Shape3D&) const;
-    ~Shape3D();
 };

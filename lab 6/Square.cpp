@@ -4,6 +4,7 @@
 
 Square::Square(float a) {
     side = a;
+    Square::CalculateArea();
     Shape::SetName("Квадрат.");
 }
 
