@@ -2,6 +2,7 @@
 
 
 int main() {
+    setlocale(LC_ALL, "RUS");
     Square s(3);
     s.CalculateArea();
     s.ShowInfo();
