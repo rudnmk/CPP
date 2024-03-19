@@ -1,4 +1,5 @@
 #include "Shape2D.h"
+#pragma once
 
 
 class Square : public Shape2D {

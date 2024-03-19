@@ -1,7 +1,7 @@
 #include "TriangularPyramid.h"
 
 
-TriangularPyramid::TriangularPyramid(Triangle& triangle, float p_h) {
+TriangularPyramid::TriangularPyramid(Triangle triangle, float p_h) {
     triangle_base = triangle.GetBase();
     triangle_height = triangle.GetHeight();
     height = p_h;

@@ -1,4 +1,5 @@
 #include "Shape2D.h"
+#pragma once
 
 
 class Triangle : virtual public Shape2D {

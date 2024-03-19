@@ -1,8 +1,6 @@
 #include "Circle.h"
 
 
-Circle::Circle() {}
-
 Circle::Circle(float r) {
     SetRadius(r);
     Circle::CalculateArea();
@@ -18,7 +16,7 @@ void Circle::SetRadius(float r) {
 }
 
 void Circle::CalculateArea() {
-    float s = 3.14 * radius * radius;
+    float s = double(3.14) * radius * radius;
     Shape2D::SetArea(s);
 }
 

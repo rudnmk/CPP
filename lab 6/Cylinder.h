@@ -1,5 +1,6 @@
 #include "Shape3D.h"
 #include "Circle.h"
+#pragma once
 
 
 class Cylinder : public Shape3D, public Circle {
