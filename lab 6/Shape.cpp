@@ -1,6 +1,5 @@
 #include "Shape.h"
 
-
 std::string Shape::GetName() {
     return name;
 }

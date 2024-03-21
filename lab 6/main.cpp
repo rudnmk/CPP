@@ -9,30 +9,30 @@
 
 int main() {
     setlocale(LC_ALL, "RUS");
-    Square s(3);
-    Circle c(4);
-    Triangle t(3, 4);
+    Square s(3.0);
+    Circle c(4.0);
+    Triangle t(3.0, 4.0);
 
     TriangularPyramid tp(3, 5, 4);
-    Cylinder cy(4, 6);
-    Sphere sp(4);
+    Cylinder cy(4.0, 6.0);
+    Sphere sp(4.0);
 
     //проверка базовых функций
     s.ShowInfo();
-    s.Scale(3);
+    s.Scale(3.0);
     s.ShowInfo();
 
     tp.ShowInfo();
-    tp.Scale(2);
+    tp.Scale(2.0);
     tp.ShowInfo();
 
     sp.ShowInfo();
-    sp.Scale(double(0.7));
+    sp.Scale(0.7);
     sp.ShowInfo();
     //----------------
 
     //проверка операторов сравнения
-    //std::cout<<(tp < tp)<<std::endl;
+    std::cout<<(tp > cy)<<std::endl;
     std::cout<<(s > t)<<std::endl;
     std::cout<<(sp == cy)<<std::endl;
     std::cout<<(c < t)<<std::endl;
