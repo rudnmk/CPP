@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\lab 6"
+    "\\lab 5",
+    "\\lab 5\\main.cpp",
+    "\\lab 5\\main.cpp\\main.cpp"
   ],
-  "SelectedNode": "\\lab 6\\main.cpp",
+  "SelectedNode": "\\lab 5\\main.cpp\\main.cpp\\matrix.h",
   "PreviewInSolutionExplorer": false
 }

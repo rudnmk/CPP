@@ -1,2 +1,31 @@
-﻿  main.cpp
-  main.cpp.vcxproj -> C:\Users\mk170\CPP\lab_5\main.cpp\x64\Debug\main.cpp.exe
+﻿  matrix.cpp
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(19,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(22,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(32,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(33,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(48,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(49,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(64,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(65,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(67,31): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(82,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(83,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(97,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(98,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(108,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(112,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(124,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(128,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(144,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(145,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(146,31): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(152,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(153,27): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(46,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(62,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(30,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(38,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(73,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 5\main.cpp\main.cpp\matrix.cpp(54,1): warning C4172: возвращение адреса локальной или временной переменной : result
+  main.cpp.vcxproj -> C:\Users\mk170\CPP\lab 5\main.cpp\x64\Debug\main.cpp.exe

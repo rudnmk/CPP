@@ -1,0 +1,61 @@
+﻿  main.cpp
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(222,32): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(222,37): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(222,43): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(222,57): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(222,62): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,34): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,41): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,51): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,65): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,70): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,86): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(226,97): warning C4305: инициализация: усечение из "double" в "float"
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(283,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(161,21): warning C4018: <: несоответствие типов со знаком и без знака
+  C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(161,21):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(250,17):
+  	выполняется компиляция ссылки на экземпляр класс шаблон функции "Matrix<double>"
+  	C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(160,7):
+  	во время компиляции функции-члена класс шаблон "void Matrix<double>::randFill(void)"
+  		C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(253,13):
+  		см. первую ссылку на "Matrix<double>::randFill" в "main"
+  
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(162,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(65,21): warning C4018: <: несоответствие типов со знаком и без знака
+  C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(65,21):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(58,10):
+  	во время компиляции функции-члена класс шаблон "Matrix<double> &Matrix<double>::operator +(const Matrix<double> &) const"
+  		C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(255,5):
+  		см. первую ссылку на "Matrix<double>::operator +" в "main"
+  
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(66,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(52,21): warning C4018: <: несоответствие типов со знаком и без знака
+  C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(52,21):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(48,2):
+  	во время компиляции функции-члена класс шаблон "Matrix<double>::Matrix(unsigned int,unsigned int)"
+  		C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(250,19):
+  		см. первую ссылку на "Matrix<double>::Matrix" в "main"
+  
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(55,13): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(169,21): warning C4018: <: несоответствие типов со знаком и без знака
+  C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(169,21):
+  контекст создания экземпляра шаблона (сначала самый старый)
+  	C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(168,7):
+  	во время компиляции функции-члена класс шаблон "void Matrix<double>::zeroFill(void)"
+  		C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(62,19):
+  		см. первую ссылку на "Matrix<double>::zeroFill" в "Matrix<double>::operator +"
+  		C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(255,5):
+  		см. первую ссылку на "Matrix<double>::operator +" в "main"
+  
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(170,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(63,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(71,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(63,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(71,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(63,1): warning C4172: возвращение адреса локальной или временной переменной : result
+C:\Users\mk170\CPP\lab 7\labwork\labwork\main.cpp(71,1): warning C4172: возвращение адреса локальной или временной переменной : result
+  labwork.vcxproj -> C:\Users\mk170\CPP\lab 7\labwork\x64\Debug\labwork.exe
