@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|solutionrelative:main.cpp\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|solutionrelative:main.cpp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2141C3AC-009C-404B-BEC0-DF3D5B616969}|main.cpp\\main.cpp.vcxproj|solutionrelative:main.cpp\\matrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "matrix.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\matrix.cpp",
               "RelativeDocumentMoniker": "main.cpp\\matrix.cpp",
               "ToolTip": "C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\matrix.cpp",
               "RelativeToolTip": "main.cpp\\matrix.cpp",
-              "ViewState": "AQIAAKIAAAAAAAAAAAAAAKcAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-24T09:08:16.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp\\main.cpp",
               "ToolTip": "C:\\Users\\mk170\\CPP\\lab 5\\main.cpp\\main.cpp\\main.cpp",
               "RelativeToolTip": "main.cpp\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-03-25T09:04:42.415Z",
               "EditorCaption": ""

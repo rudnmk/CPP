@@ -1,6 +1,10 @@
 #pragma once
 #include <iostream>
 #include <ctime>
+#include <fstream>
+#include <string>
+#include <math.h>
+#include <format>
 
 
 class Matrix {
@@ -12,6 +16,11 @@ private:
 public:
     Matrix();
     Matrix(unsigned int row, unsigned int col);
+
+    /*
+    int getRow();
+    int getCol();
+    */
 
     Matrix& operator+ (const Matrix&) const;
     Matrix& operator- (const Matrix&) const;
@@ -28,8 +37,5 @@ public:
     friend std::ostream& operator<<(std::ostream&, const Matrix);
 
     void randFill();
-
     void zeroFill();
-
-    //~Matrix();
 };

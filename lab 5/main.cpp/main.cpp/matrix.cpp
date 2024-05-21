@@ -2,25 +2,35 @@
 
 
 Matrix::Matrix() {
+    srand(time(0));
     n = 3;
     m = 3;
     data = new int* [m];
     for (int i = 0; i < 3; i++) {
         data[i] = new int[n];
     }
-    srand(time(0));
 
 }
 
 Matrix::Matrix(unsigned int row, unsigned int col) {
+    srand(time(0));
     n = row;
     m = col;
     data = new int* [col];
     for (int i = 0; i < row; i++) {
         data[i] = new int[row];
     }
-    srand(time(0));
 }
+
+/*
+int Matrix::getRow() {
+    return n;
+}
+
+int Matrix::getCol() {
+    return m;
+}
+*/
 
 Matrix& Matrix::operator+ (const Matrix& other_matrix) const {
     Matrix result(n, m);
