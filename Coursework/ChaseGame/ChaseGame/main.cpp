@@ -2,7 +2,7 @@
 
 int main() {
 	setlocale(LC_ALL, "ru");
-	MainGame game(30, 30);
+	MainGame game(10, 30);
 	game.startGame();
 
 	return 0;

@@ -42,7 +42,9 @@ public:
 	Arena();
 	Arena(int row, int col);
 	std::vector<int> getSize();
+	void clearField();
 	void setPositions(int hx, int hy, int px, int py);
+	void setSize(int x, int y);
 	void createPlayingField();
 	std::vector<int> getPosition(char role);
 	void drawArena();

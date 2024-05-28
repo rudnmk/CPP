@@ -27,37 +27,47 @@ Prey::Prey(char p) {
 }
 
 void Prey::move(char choice) {
+	if (choice != 'w' && choice != 'a' && choice != 's' && choice != 'd' && choice != 'e' && choice != 'z' && choice != 'c' && choice != 'q') {
+		while (true) {
+			std::cout << "Incorrect input. You can only choose 'WASD' to move vertically/horizontally and 'QEZC' to move diagonally(only lower cases!)." << std::endl;
+			std::cout << "Input: ";
+			std::cin >> choice;
+			std::cin.ignore();
+			if (choice == 'w' || choice == 'a' || choice == 's' || choice == 'd' || choice == 'e' || choice == 'z' || choice == 'c' || choice == 'q') {
+				break;
+			}
+		}
+	}
 	std::vector<int> position = getPos();
 	int x = position[0];
 	int y = position[1];
+
 	if (choice == 'w') {
-		setPos(x, y++);
+		setPos(x, y - 1);
 	}
 	else if (choice == 'a') {
-		setPos(x--, y);
+		setPos(x - 1, y);
 	}
 	else if (choice == 's') {
-		setPos(x, y--);
+		setPos(x, y + 1);
 	}
 	else if (choice == 'd') {
-		setPos(x++, y);
+		setPos(x + 1, y);
 	}
 	else if (choice == 'q') {
-		setPos(x--, y++);
+		setPos(x - 1, y - 1);
 	}
 	else if (choice == 'e') {
-		setPos(x++, y++);
+		setPos(x + 1, y - 1);
 	}
 	else if (choice == 'z') {
-		setPos(x--, y--);
+		setPos(x - 1, y - 1);
 	}
 	else if (choice == 'c') {
-		setPos(x++, y--);
-	}
-	else if (choice == 'x') {
-		setPos(x, y);
+		setPos(x + 1, y + 1);
 	}
 }
+
 
 Hunter::Hunter() {
 	setWhoPlays('n');
@@ -68,21 +78,38 @@ Hunter::Hunter(char p) {
 }
 
 void Hunter::move(char choice) {
+	if (choice != 'w' && choice != 'a' && choice != 's' && choice != 'd') {
+		while (true) {
+			std::cout << "Incorrect input. You can only choose 'WASD'(only lower cases!)" << std::endl;
+			std::cout << "Input: ";
+			std::cin >> choice;
+			std::cin.ignore();
+			if (choice == 'w' || choice == 'a' || choice == 's' || choice == 'd') {
+				break;
+			}
+		}
+	}
 	int step;
-	std::cout << "Введите число от 1 до 3, на которое вы хотите передвинуться в данном направлении: ";
+	std::cout << "Input the number of steps you want to make from 1 to 3: ";
 	std::cin >> step;
 	std::cin.ignore();
+	while (step < 1 || step > 3) {
+		std::cout << "Incorrect input. Hunter can only move from 1 to 3 steps." << std::endl;
+		std::cout << "Input: ";
+		std::cin >> step;
+		std::cin.ignore();
+	}
 	std::vector<int> position = getPos();
 	int x = position[0];
 	int y = position[1];
 	if (choice == 'w') {
-		setPos(x, (y + step));
+		setPos(x, (y - step));
 	}
 	else if (choice == 'a') {
 		setPos((x - step), y);
 	}
 	else if (choice == 's') {
-		setPos(x, (y - step));
+		setPos(x, (y + step));
 	}
 	else {
 		setPos((x + step), y);
@@ -90,13 +117,20 @@ void Hunter::move(char choice) {
 }
 
 Arena::Arena() {
-	size[0] = 30;
-	size[1] = 30;
+	setSize(20, 20);
 }
 
 Arena::Arena(int row, int col) {
-	size[0] = row;
-	size[1] = col;
+	setSize(row, col);
+}
+
+void Arena::setSize(int x, int y) {
+	size[0] = x;
+	size[1] = y;
+}
+
+void Arena::clearField() {
+	playingField = {};
 }
 
 std::vector<int> Arena::getSize() {
@@ -144,46 +178,61 @@ std::vector<int> Arena::getPosition(char role) {
 
 void Arena::drawArena() {
 	std::string upper_and_lower_borders(size[1], '-');
-	std::cout << upper_and_lower_borders << std::endl;
-	for (int col = 0; col < size[1]; col++) {
+	std::vector<int> lower_border_numbers;
+	std::cout << ' ' << upper_and_lower_borders << std::endl;
+	for (int col = 0; col < size[0]; col++) {
 		std::cout << "|";
-		for (int row = 0; row < size[0]; row++) {
+		for (int row = 0; row < size[1]; row++) {
 			std::cout << playingField[col][row];
 		}
 		std::cout << "|" << std::endl;
 	}
-	std::cout << upper_and_lower_borders << std::endl;
+	std::cout << ' ' << upper_and_lower_borders << std::endl;
 }
 
 
 MainGame::MainGame() {
-	Hunter hunter;
-	Prey prey;
-	Arena arena;
 	turnAmount = 20;
-
 }
 
 MainGame::MainGame(int row, int col) {
 	char r = chooseRole();
 	if (r == 'H') {
-		Hunter hunter('p');
-		Prey prey('n');
+		hunter.setWhoPlays('p');
+		prey.setWhoPlays('n');
 	}
 	else {
-		Hunter hunter('n');
-		Prey prey('p');
+		hunter.setWhoPlays('n');
+		prey.setWhoPlays('p');
 	}
-	Arena arena(row, col);
-	std::cout << "Укажите кол-во ходов, за которое охотнику нужно поймать жертву: ";
+	arena.setSize(row, col);
+	std::cout << "Choose the number of turns: ";
 	std::cin >> turnAmount;
 	std::cin.ignore();
+	/*
+	while (true) {
+		std::string turnAmountCheck = std::to_string(turnAmount);
+		for (int i = 0; i < turnAmountCheck.length(); i++) {
+			if (turnAmountCheck[i] >= 48 && turnAmountCheck[i] <= 58) {
+				break;
+			}
+
+		}
+		std::cout << "You've chosen an incorrect amount of turns. Try again." << std::endl;
+		std::cin >> turnAmount;
+		std::cin.ignore();
+	}
+	*/
 }
 
 char MainGame::chooseRole() {
 	char r;
-	std::cout << "'H' - Охотник, 'P' - Добыча. Выберите роль, вписав соответствующую букву роли: ";
+	std::cout << "'H' - Hunter, 'P' - Prey. Choose your role(only upper case!): ";
 	std::cin >> r;
+	while (r != 'H' && r != 'P') {
+		std::cout << "You've chosen an incorrect role." << std::endl;
+		std::cin >> r;
+	}
 	return r;
 }
 
@@ -192,7 +241,7 @@ void MainGame::turnChange() {
 	char hunterManager = hunter.getWhoPlays();
 	char preyManager = prey.getWhoPlays();
 	char choice;
-	if (turn = 'H') {
+	if (turn == 'H') {
 		if (hunterManager == 'p') {
 			choice = moveChoice();
 			hunter.move(choice);
@@ -217,7 +266,7 @@ void MainGame::turnChange() {
 
 char MainGame::moveChoice() {
 	char choice;
-	std::cout << "Введите, куда вы хотите пойти: ";
+	std::cout << "Choose where you want to go: ";
 	std::cin >> choice;
 	std::cin.ignore();
 	return choice;
@@ -276,14 +325,14 @@ void MainGame::setStartingPositions(int hx, int hy, int px, int py) {
 
 
 void MainGame::startGame() {
-	setStartingPositions(0, 0, 15, 15);
-	int hx = arena.getPosition('H')[0];
-	int hy = arena.getPosition('H')[1];
-	int px = arena.getPosition('P')[0];
-	int py = arena.getPosition('P')[1];
+	setStartingPositions(0, 0, int(arena.getSize()[1] / 2), int(arena.getSize()[0] / 2));
 	int turnCount = 1;
 	bool hunterWon = 0;
 	while (turnCount <= turnAmount) {
+		int hx = arena.getPosition('H')[0];
+		int hy = arena.getPosition('H')[1];
+		int px = arena.getPosition('P')[0];
+		int py = arena.getPosition('P')[1];
 		std::cout << "Ход #" << turnCount << std::endl;
 		arena.createPlayingField();
 		arena.drawArena();
@@ -294,6 +343,7 @@ void MainGame::startGame() {
 		turnChange();
 		turnCount++;
 		arena.setPositions(hunter.getPos()[0], hunter.getPos()[1], prey.getPos()[0], prey.getPos()[1]);
+		arena.clearField();
 	}
 	endTheGame(hunterWon);
 }
@@ -301,9 +351,9 @@ void MainGame::startGame() {
 
 void MainGame::endTheGame(bool hunterWon) {
 	if (hunterWon) {
-		std::cout << "Победил охотник!" << std::endl;
+		std::cout << "Hunter wins!" << std::endl;
 	}
 	else {
-		std::cout << "Победила жертва!" << std::endl;
+		std::cout << "Prey wins!" << std::endl;
 	}
 }
