@@ -7,6 +7,9 @@
       "RelativeMoniker": "D:0:0:{DCB88E9C-D817-45BA-9572-EDEB733397CB}|ChaseGame\\ChaseGame.vcxproj|solutionrelative:ChaseGame\\Classes.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DCB88E9C-D817-45BA-9572-EDEB733397CB}|ChaseGame\\ChaseGame.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\ENTERPRISE\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\STRING||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DCB88E9C-D817-45BA-9572-EDEB733397CB}|ChaseGame\\ChaseGame.vcxproj|C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\Classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DCB88E9C-D817-45BA-9572-EDEB733397CB}|ChaseGame\\ChaseGame.vcxproj|solutionrelative:ChaseGame\\Classes.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -22,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,33 +37,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "string",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\string",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\string",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\string",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.39.33519\\include\\string",
+              "ViewState": "AQIAAEsAAAAAAAAAAAArwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-29T22:01:39.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Classes.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\Classes.cpp",
               "RelativeDocumentMoniker": "ChaseGame\\Classes.cpp",
               "ToolTip": "C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\Classes.cpp",
               "RelativeToolTip": "ChaseGame\\Classes.cpp",
-              "ViewState": "AQIAAMAAAAAAAAAAAAAAANsAAAADAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAGEAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-22T15:28:43.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Classes.h",
               "DocumentMoniker": "C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\Classes.h",
               "RelativeDocumentMoniker": "ChaseGame\\Classes.h",
               "ToolTip": "C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\Classes.h",
               "RelativeToolTip": "ChaseGame\\Classes.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAPAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAADsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T14:33:16.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T14:33:16.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\mk170\\CPP\\Coursework\\ChaseGame\\ChaseGame\\main.cpp",
               "RelativeDocumentMoniker": "ChaseGame\\main.cpp",
@@ -68,8 +83,7 @@
               "RelativeToolTip": "ChaseGame\\main.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-22T14:33:05.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T14:33:05.802Z"
             }
           ]
         }

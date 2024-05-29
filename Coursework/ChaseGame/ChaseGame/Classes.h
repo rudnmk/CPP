@@ -57,7 +57,7 @@ private:
 	Prey prey;
 	Arena arena;
 	char turn = 'H';
-	int turnAmount;
+	std::string turnAmount;
 public:
 	MainGame();
 	MainGame(int row, int col);

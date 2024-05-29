@@ -89,15 +89,22 @@ void Hunter::move(char choice) {
 			}
 		}
 	}
-	int step;
+	std::string stepS;
 	std::cout << "Input the number of steps you want to make from 1 to 3: ";
-	std::cin >> step;
+	std::cin >> stepS;
 	std::cin.ignore();
+	int step = -1;
+	if (stepS.find_first_not_of("0123456789") == std::string::npos) {
+		step = std::stoi(stepS);
+	}
 	while (step < 1 || step > 3) {
 		std::cout << "Incorrect input. Hunter can only move from 1 to 3 steps." << std::endl;
 		std::cout << "Input: ";
-		std::cin >> step;
+		std::cin >> stepS;
 		std::cin.ignore();
+		if (stepS.find_first_not_of("0123456789") == std::string::npos) {
+			step = std::stoi(stepS);
+		}
 	}
 	std::vector<int> position = getPos();
 	int x = position[0];
@@ -208,21 +215,16 @@ MainGame::MainGame(int row, int col) {
 	arena.setSize(row, col);
 	std::cout << "Choose the number of turns: ";
 	std::cin >> turnAmount;
+	bool no = 0;
 	std::cin.ignore();
-	/*
 	while (true) {
-		std::string turnAmountCheck = std::to_string(turnAmount);
-		for (int i = 0; i < turnAmountCheck.length(); i++) {
-			if (turnAmountCheck[i] >= 48 && turnAmountCheck[i] <= 58) {
-				break;
-			}
-
+		if (turnAmount.find_first_not_of("0123456789") == std::string::npos) {
+			break;
 		}
 		std::cout << "You've chosen an incorrect amount of turns. Try again." << std::endl;
 		std::cin >> turnAmount;
 		std::cin.ignore();
 	}
-	*/
 }
 
 char MainGame::chooseRole() {
@@ -328,7 +330,7 @@ void MainGame::startGame() {
 	setStartingPositions(0, 0, int(arena.getSize()[1] / 2), int(arena.getSize()[0] / 2));
 	int turnCount = 1;
 	bool hunterWon = 0;
-	while (turnCount <= turnAmount) {
+	while (turnCount <= std::stoi(turnAmount)) {
 		int hx = arena.getPosition('H')[0];
 		int hy = arena.getPosition('H')[1];
 		int px = arena.getPosition('P')[0];
@@ -336,7 +338,7 @@ void MainGame::startGame() {
 		std::cout << "Õîä #" << turnCount << std::endl;
 		arena.createPlayingField();
 		arena.drawArena();
-		if (hx == px && hy == py && turnCount != turnAmount) {
+		if (hx == px && hy == py && turnCount != std::stoi(turnAmount)) {
 			hunterWon = 1;
 			break;
 		}
