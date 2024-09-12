@@ -188,7 +188,6 @@ int find(std::vector<int> vector) {
 
 std::vector<int> no_duplicates_vector(std::vector<int> vector) {
 	std::vector<int> only_uniques_vector;
-	vector.pop_back();
 	std::vector<int>::iterator iter = vector.begin();
 	only_uniques_vector.push_back(*(iter));
 	while (iter != vector.end()) {
