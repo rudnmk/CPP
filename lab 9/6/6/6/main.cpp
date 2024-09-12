@@ -161,9 +161,11 @@ std::vector<int> insert_number(std::vector<int> vector) {
 	vector.insert(iter + index, number);
 	std::vector<int>::iterator new_iter = vector.end();
 	if (*(new_iter) == 1) {
+		vector.pop_back();
 		std::sort(vector.begin(), vector.end(), std::greater<int>());
 	}
 	else if (*(new_iter) == 2) {
+		vector.pop_back();
 		std::sort(vector.begin(), vector.end());
 	}
 
