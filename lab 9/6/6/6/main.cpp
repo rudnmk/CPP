@@ -115,7 +115,6 @@ std::vector<int> no_even_vector(std::vector<int> vector) {
 }
 
 std::vector<int> sort_vector(std::vector<int> vector) {
-	std::vector<int> sorted_vector;
 	std::string answer;
 	vector.pop_back();
 	std::cout << "Ââåäèòå 'lower', åñëè õîòèòå îòñîðòèðîâàòü âåêòîð ïî óáûâàíèþ è 'greater' - åñëè ïî âîçðàñòàíèþ. Ââîä: ";
@@ -135,13 +134,11 @@ std::vector<int> sort_vector(std::vector<int> vector) {
 			std::cout << "Íåâåðíî ââåäåíà êîìàíäà. Ïîâòîðèòå ïîïûòêó. Ââîä: ";
 		}
 	}
-	sorted_vector.swap(vector);
-	return sorted_vector;
+	return vector;
 }
 
 std::vector<int> insert_number(std::vector<int> vector) {
 	std::vector<int>::iterator iter = vector.begin();
-	std::vector<int> new_vector;
 	int index;
 	int number;
 	std::cout << "Ââåäèòå ïîçèöèþ, íà êîòîðóþ âû õîòèòå âñòàâèòü ýëåìåíò: ";
@@ -169,8 +166,7 @@ std::vector<int> insert_number(std::vector<int> vector) {
 		std::sort(vector.begin(), vector.end());
 	}
 
-	new_vector.swap(vector);
-	return new_vector;
+	return vector;
 }
 
 int find(std::vector<int> vector) {
