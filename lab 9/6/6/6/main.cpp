@@ -118,7 +118,7 @@ std::vector<int> sort_vector(std::vector<int> vector) {
 	std::vector<int> sorted_vector;
 	std::string answer;
 	vector.pop_back();
-	std::cout << "Ââåäèòå 'lower', åñëè õîòèòå îòñîðòèðîâàòü âåêòîð ïî óáûâàíèþ è 'greater' - åñëè ïî âîçðàñòàíèþ. Ââîä: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ 'lower', Ã¥Ã±Ã«Ã¨ ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã®Ã²Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢Ã Ã²Ã¼ Ã¢Ã¥ÃªÃ²Ã®Ã° Ã¯Ã® Ã³Ã¡Ã»Ã¢Ã Ã­Ã¨Ã¾ Ã¨ 'greater' - Ã¥Ã±Ã«Ã¨ Ã¯Ã® Ã¢Ã®Ã§Ã°Ã Ã±Ã²Ã Ã­Ã¨Ã¾. Ã‚Ã¢Ã®Ã¤: ";
 	while (true) {
 		std::cin >> answer;
 		if (answer == "lower") {
@@ -132,7 +132,7 @@ std::vector<int> sort_vector(std::vector<int> vector) {
 			break;
 		}
 		else {
-			std::cout << "Íåâåðíî ââåäåíà êîìàíäà. Ïîâòîðèòå ïîïûòêó. Ââîä: ";
+			std::cout << "ÃÃ¥Ã¢Ã¥Ã°Ã­Ã® Ã¢Ã¢Ã¥Ã¤Ã¥Ã­Ã  ÃªÃ®Ã¬Ã Ã­Ã¤Ã . ÃÃ®Ã¢Ã²Ã®Ã°Ã¨Ã²Ã¥ Ã¯Ã®Ã¯Ã»Ã²ÃªÃ³. Ã‚Ã¢Ã®Ã¤: ";
 		}
 	}
 	sorted_vector.swap(vector);
@@ -144,7 +144,7 @@ std::vector<int> insert_number(std::vector<int> vector) {
 	std::vector<int> new_vector;
 	int index;
 	int number;
-	std::cout << "Ââåäèòå ïîçèöèþ, íà êîòîðóþ âû õîòèòå âñòàâèòü ýëåìåíò: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¯Ã®Ã§Ã¨Ã¶Ã¨Ã¾, Ã­Ã  ÃªÃ®Ã²Ã®Ã°Ã³Ã¾ Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¢Ã±Ã²Ã Ã¢Ã¨Ã²Ã¼ Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²: ";
 	while (true) {
 		std::cin >> index;
 		std::cin.ignore();
@@ -152,18 +152,18 @@ std::vector<int> insert_number(std::vector<int> vector) {
 			break;
 		}
 		else {
-			std::cout << "Âû âûøëè çà ïðåäåëû âåêòîðà. Ïîâòîðèòå ïîïûòêó: ";
+			std::cout << "Ã‚Ã» Ã¢Ã»Ã¸Ã«Ã¨ Ã§Ã  Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã» Ã¢Ã¥ÃªÃ²Ã®Ã°Ã . ÃÃ®Ã¢Ã²Ã®Ã°Ã¨Ã²Ã¥ Ã¯Ã®Ã¯Ã»Ã²ÃªÃ³: ";
 		}
 	}
-	std::cout << "Ââåäèòå ÷èñëî, êîòîðîå âû õîòèòå âñòàâèòü: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã®, ÃªÃ®Ã²Ã®Ã°Ã®Ã¥ Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¢Ã±Ã²Ã Ã¢Ã¨Ã²Ã¼: ";
 	std::cin >> number;
 	index--;
 	vector.insert(iter + index, number);
-	std::vector<int>::iterator new_iter = vector.begin();
-	if (*(new_iter + (vector.size()) - 1) == 1) {
+	std::vector<int>::iterator new_iter = vector.end();
+	if (*(new_iter) == 1) {
 		std::sort(vector.begin(), vector.end(), std::greater<int>());
 	}
-	else if (*(new_iter + (vector.size()) - 1) == 2) {
+	else if (*(new_iter) == 2) {
 		std::sort(vector.begin(), vector.end());
 	}
 
@@ -174,14 +174,14 @@ std::vector<int> insert_number(std::vector<int> vector) {
 int find(std::vector<int> vector) {
 	int index;
 	std::vector<int>::iterator iter = vector.begin();
-	std::cout << "Ââåäèòå èíäåêñ ýëåìåíòà, êîòîðûé âû õîòèòå ïîëó÷èòü: ";
+	std::cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¨Ã­Ã¤Ã¥ÃªÃ± Ã½Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã , ÃªÃ®Ã²Ã®Ã°Ã»Ã© Ã¢Ã» ÃµÃ®Ã²Ã¨Ã²Ã¥ Ã¯Ã®Ã«Ã³Ã·Ã¨Ã²Ã¼: ";
 	while (true) {
 		std::cin >> index;
 		if (index > 0 && index < vector.size()) {
 			break;
 		}
 		else {
-			std::cout << "Âû âûøëè çà ïðåäåëû âåêòîðà. Ïîâòîðèòå ïîïûòêó: ";
+			std::cout << "Ã‚Ã» Ã¢Ã»Ã¸Ã«Ã¨ Ã§Ã  Ã¯Ã°Ã¥Ã¤Ã¥Ã«Ã» Ã¢Ã¥ÃªÃ²Ã®Ã°Ã . ÃÃ®Ã¢Ã²Ã®Ã°Ã¨Ã²Ã¥ Ã¯Ã®Ã¯Ã»Ã²ÃªÃ³: ";
 		}
 	}
 	index--;
